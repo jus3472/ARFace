@@ -83,18 +83,28 @@ struct ARViewContainer: UIViewRepresentable {
             var eulerAngles = SCNVector3Zero
             
             switch filter {
+            case .blackPinkCatEars:
+                modelName = "black-pink-cat-ears"
+                fileExtension = "usdz"
+                position = SCNVector3(0.035, -0.4, 0)
+                scale = SCNVector3(0.0045, 0.004, 0.004)
             case .whiteAnimeCatEars:
                 modelName = "white-anime-cat-ears"
                 fileExtension = "usdz"
                 position = SCNVector3(0, 0.07, -0.01)
                 scale = SCNVector3(0.0015, 0.0015, 0.0015)
-                eulerAngles = SCNVector3(0, 0, 0)
-            case .whiteCatEarsHeadband:
-                modelName = "white-cat-ears-headband"
-                fileExtension = "obj"
-                position = SCNVector3(0, 0.045, 0)
-                scale = SCNVector3(0.4, 0.4, 0.4)
-                eulerAngles = SCNVector3(0, 0, 0)
+            case .japaneseMask:
+                modelName = "japanese-mask"
+                fileExtension = "usdz"
+                position = SCNVector3(0, 0.031, 0)
+                scale = SCNVector3(0.0015, 0.0015, 0.0015)
+                eulerAngles = SCNVector3(0, 3.15, 0)
+            case .dragonHead:
+                modelName = "dragon-head"
+                fileExtension = "usdz"
+                position = SCNVector3(0, 0.006, 0.02)
+                scale = SCNVector3(0.0045, 0.0045, 0.0045)
+                eulerAngles = SCNVector3(0, -1.6, 0)
             default:
                 break
             }
@@ -120,7 +130,7 @@ struct ARViewContainer: UIViewRepresentable {
             
             // For Position, x=0 and y=0 makes it so that the filter is around eye-level. So don't change x value. You can change y value to make it higher up.
             // For Scale, all values should be the same.
-            // For EulerAngles, there's no need to change any values.
+            // For EulerAngles, change only when necessary.
             //
             // Position: x: left/right, y: down/up, z: forward/back
             // Scale: x: width, y: height, z: depth

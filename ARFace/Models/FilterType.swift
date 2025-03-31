@@ -9,8 +9,9 @@ import Foundation
 
 enum FilterType: String, CaseIterable, Identifiable {
     case none = "No Filter"
+    case blackPinkCatEars = "Black Pink Cat Ears"
     case whiteAnimeCatEars = "White Anime Cat Ears"
-    case whiteCatEarsHeadband = "White Cat Ears Headband"
-
+    case japaneseMask = "Japanese Mask"
+    case dragonHead = "Dragon Head"
     var id: String { self.rawValue }
 }

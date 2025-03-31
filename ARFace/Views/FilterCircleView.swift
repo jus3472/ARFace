@@ -27,10 +27,14 @@ struct FilterCircleView: View {
         switch filter {
         case .none:
             return "No"
+        case .blackPinkCatEars:
+            return "Black Cat Ears"
         case .whiteAnimeCatEars:
-            return "Anime"
-        case .whiteCatEarsHeadband:
-            return "Headband"
+            return "White Cat Ears"
+        case .japaneseMask:
+            return "Japanese"
+        case .dragonHead:
+            return "Dragon"
         }
     }
     
