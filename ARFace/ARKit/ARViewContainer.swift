@@ -105,6 +105,22 @@ struct ARViewContainer: UIViewRepresentable {
                 position = SCNVector3(0, 0.006, 0.02)
                 scale = SCNVector3(0.0045, 0.0045, 0.0045)
                 eulerAngles = SCNVector3(0, -1.6, 0)
+            case .ironmanhelmet:
+                modelName = "ironman"
+                fileExtension = "usdz"
+                position = SCNVector3(0, -0.14, -0.04)
+                scale = SCNVector3(0.001, 0.001, 0.001)
+            case .batmanmask:
+                modelName = "batman-mask"
+                fileExtension = "usdz"
+                position = SCNVector3(0, -0.043, -0.04)
+                scale = SCNVector3(0.012, 0.012, 0.012)
+            case .orangebird:
+                modelName = "orange-bird"
+                fileExtension = "usdz"
+                position = SCNVector3(-0.12, -0.13, 0)
+                scale = SCNVector3(0.0007, 0.0007, 0.0007)
+                eulerAngles = SCNVector3(0, 0.8, 0)
             default:
                 break
             }
