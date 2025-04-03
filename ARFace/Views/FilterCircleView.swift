@@ -35,6 +35,12 @@ struct FilterCircleView: View {
             return "Japanese"
         case .dragonHead:
             return "Dragon"
+        case .ironmanhelmet:
+            return "Ironman"
+        case .batmanmask:
+            return "Batman"
+        case .orangebird:
+            return "Bird"
         }
     }
     
